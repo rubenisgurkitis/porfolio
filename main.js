@@ -19,7 +19,8 @@ function onBubbleClick(bubbleId) {
 
 function onContainerClick() {
     this.event.stopImmediatePropagation();
-    toggleContentBubbleVisibility();
+    const contentBubble = document.getElementById('bubble-content');
+    if (!contentBubble.classList.contains('hidden')) toggleContentBubbleVisibility();
 }
 
 function toggleContentBubbleVisibility() {
