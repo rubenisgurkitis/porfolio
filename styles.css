@@ -1,0 +1,140 @@
+:root {
+  --s-size: 150px;
+  --m-size: 200px;
+  --l-size: 240px;
+  --xl-size: 500px;
+  --font-l: 32px;
+  --font-m: 24px;
+}
+
+@media screen and (max-width: 500px){
+  :root {
+    --s-size: 100px;
+    --m-size: 150px;
+    --l-size: 160px;
+    --xl-size: 350px;
+    --font-l: 24px;
+    --font-m: 16px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  :root {
+    --s-size: 70px;
+    --m-size: 120px;
+    --l-size: 120px;
+    --xl-size: 300px;
+    --font-l: 16px;
+    --font-m: 12px;
+  }
+}
+
+body {
+  background: black;
+  background-image:
+    radial-gradient(white 20%, transparent 0),
+    radial-gradient(white 20%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0, 0, 10px, 10px;
+  font-family: 'Heebo', sans-serif;
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.side-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  font-size: var(--font-l);
+}
+
+.bubble--s {
+  width: var(--s-size);
+  height: var(--s-size);
+}
+
+.bubble--m {
+  width: var(--m-size);
+  height: var(--m-size);
+}
+
+.bubble--l {
+  width: var(--l-size);
+  height: var(--l-size);
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.bubble--xl {
+  width: var(--xl-size);
+  height: var(--xl-size);
+}
+
+.bubble--fixed {
+  position: fixed;
+  top: 64px;
+  left: calc(50% - var(--xl-size) / 2);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  visibility: hidden;
+}
+
+.bubble__text {
+  height: 60%;
+  width: 60%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.bubble:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.footer {
+  height: 72px;
+  width: 100%;
+  margin: 0;
+  background: white;
+  background-image:
+    radial-gradient(black 20%, transparent 0),
+    radial-gradient(black 20%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0, 0, 10px, 10px;
+}
+
+.contact {
+  width: fit-content;
+  margin-left: 16px;
+  padding-top: 4px;
+  font-size: var(--font-m);
+  font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  .contact {
+    padding-top: 8px;
+  }
+}
+
+.fixed {
+  position: fixed;
+}
