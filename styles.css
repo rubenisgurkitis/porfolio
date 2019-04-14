@@ -116,24 +116,14 @@ body {
   width: 100%;
   margin: 0;
   background: white;
-  background-image:
-    radial-gradient(black 20%, transparent 0),
-    radial-gradient(black 20%, transparent 0);
-  background-size: 30px 30px;
-  background-position: 0, 0, 10px, 10px;
 }
 
 .contact {
   width: fit-content;
   margin-left: 16px;
-  padding-top: 4px;
+  padding-top: 16px;
   font-size: var(--font-m);
   font-weight: bold;
-}
-@media screen and (max-width: 500px) {
-  .contact {
-    padding-top: 8px;
-  }
 }
 
 .fixed {
