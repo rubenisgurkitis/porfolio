@@ -5,29 +5,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Ruben Agullo Cordoba</title>
-  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-  <div class="bubble bubble--xl bubble--fixed">
-    <p class="bubble__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu imperdiet, tempus dolor vel, feugiat felis. Suspendisse a est eget erat tincidunt iaculis id eu lacus.
-    </p>
+  <div id="bubble-content" class="bubble bubble--xl bubble--fixed hidden">
+    <p class="bubble__text"></p>
   </div>
-  <div class="main-container">
+  <div class="main-container" onclick="onContainerClick()">
     <div class="side-container">
       <div class="fixed">
-        <div class="bubble bubble--l">Rubén</div>
-        <div class="bubble bubble--l">Agulló</div>
-        <div class="bubble bubble--l">Córdoba</div>
+        <div id="bubble-1" class="bubble bubble--l" onclick="onBubbleClick(id)">Rubén</div>
+        <div id="bubble-2" class="bubble bubble--l" onclick="onBubbleClick(id)">Agulló</div>
+        <div id="bubble-3" class="bubble bubble--l" onclick="onBubbleClick(id)">Córdoba</div>
       </div>
     </div>
     <div class="side-container">
-      <div class="bubble bubble--l">Finecortex</div>
-      <div class="bubble bubble--l">Takeaway</div>
-      <div class="bubble bubble--l">Delivery Hero<br>Germany</div>
-      <div class="bubble bubble--l">Meedoc</div>
-      <div class="bubble bubble--l">Accenture</div>
+      <div id="bubble-4" class="bubble bubble--l" onclick="onBubbleClick(id)">Finecortex</div>
+      <div id="bubble-5" class="bubble bubble--l" onclick="onBubbleClick(id)">Takeaway</div>
+      <div id="bubble-6" class="bubble bubble--l" onclick="onBubbleClick(id)">Delivery Hero<br>Germany</div>
+      <div id="bubble-7" class="bubble bubble--l" onclick="onBubbleClick(id)">Meedoc</div>
+      <div id="bubble-8" class="bubble bubble--l" onclick="onBubbleClick(id)">Accenture</div>
+      <div id="bubble-9" class="bubble bubble--l" onclick="onBubbleClick(id)">Apeirons</div>
     </div>
   </div>
   <footer class="footer">

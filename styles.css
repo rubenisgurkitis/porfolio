@@ -95,10 +95,11 @@ body {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  visibility: hidden;
 }
 
 .bubble__text {
+  display: flex;
+  align-items: center;
   height: 60%;
   width: 60%;
   text-align: center;
@@ -137,4 +138,8 @@ body {
 
 .fixed {
   position: fixed;
+}
+
+.hidden {
+  visibility: hidden;
 }
