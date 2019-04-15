@@ -1,7 +1,7 @@
 const BUBBLE_TEXT_MAPPING = {
     'bubble-1': 'First accent for communication and good mood',
-    'bubble-2': 'Second accent for keeping focus on project/product management',
-    'bubble-3': 'Third accent for having an eye on design',
+    'bubble-2': 'Second accent for focus on project/product management',
+    'bubble-3': 'Third accent for an eye on design',
     'bubble-4': 'On my free time I help as a project manager to my friends from Finecortex. They are mainly focused on UX and redesigns of web apps and mobile apps for different companies from USA.',
     'bubble-5': 'After the acquisition of Delivery Hero Germany by Takeaway, I joined their team with main focus on the loyalty shop and white-label sites.',
     'bubble-6': 'My main tasks were maintenance and development of new features through ab-tests for Lieferheld website (Backbone.js). However, I also helped Pizza.de (React.js + Redux.js) team with some features.',

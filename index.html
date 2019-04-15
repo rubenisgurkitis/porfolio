@@ -11,18 +11,16 @@
   <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-  <div id="bubble-content" class="bubble bubble--xl bubble--fixed hidden">
+  <div id="bubble-content" class="bubble bubble--xl bubble--fixed hidden" onclick="onContainerClick()">
     <p class="bubble__text"></p>
   </div>
   <div class="main-container" onclick="onContainerClick()">
-    <div class="side-container">
-      <div class="fixed">
+    <div class="vertical-container">
         <div id="bubble-1" class="bubble bubble--l" onclick="onBubbleClick(id)">Rubén</div>
         <div id="bubble-2" class="bubble bubble--l" onclick="onBubbleClick(id)">Agulló</div>
         <div id="bubble-3" class="bubble bubble--l" onclick="onBubbleClick(id)">Córdoba</div>
-      </div>
     </div>
-    <div class="side-container">
+    <div class="vertical-container">
       <div id="bubble-4" class="bubble bubble--l" onclick="onBubbleClick(id)">Finecortex</div>
       <div id="bubble-5" class="bubble bubble--l" onclick="onBubbleClick(id)">Takeaway</div>
       <div id="bubble-6" class="bubble bubble--l" onclick="onBubbleClick(id)">Delivery Hero<br>Germany</div>
@@ -32,7 +30,9 @@
     </div>
   </div>
   <footer class="footer">
-    <div class="contact">rubenagullocordoba@gmail.com</div>
+    <a class="contact" href="mailto:rubenagullocordoba@gmail.com">
+      rubenagullocordoba@gmail.com
+    </a>
   </footer>
 </body>
 </html>
